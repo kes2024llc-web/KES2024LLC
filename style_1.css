@@ -1,0 +1,139 @@
+/* File: style.css - ADJUSTED FOR LTR (Left-to-Right) */
+
+/* Basic Reset and Fonts */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; 
+    color: #333;
+    direction: ltr; /* Changed to Left-to-Right */
+    text-align: left; /* Changed to Left alignment */
+}
+
+/* Central Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.padded {
+    padding: 30px 0;
+}
+
+/* Header and Navigation */
+#header {
+    background-color: #34495e; 
+    color: #fff;
+    border-bottom: 3px solid #f8dcbf; 
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    margin: 0;
+    color: #f8dcbf;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    /* Adjusted margin for LTR */
+    margin-left: 20px; 
+    margin-right: 0; 
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover, .nav-links a.contact-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-btn {
+    background-color: #f8dcbf; 
+    color: #333 !important;
+    padding: 8px 15px !important;
+    font-weight: bold;
+}
+
+/* General Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background-color: #3498db; 
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #2980b9;
+}
+
+/* HERO Section */
+#hero-section {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+}
+
+.hero-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#hero-section h2 {
+    color: #34495e;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#hero-section p {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
